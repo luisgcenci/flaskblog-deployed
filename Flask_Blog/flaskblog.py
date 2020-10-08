@@ -5,7 +5,7 @@ from forms import RegistrationForm, LoginForm
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'ec47875fef38fcef8eb433cddb338108'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///sites.db'
 db = SQLAlchemy(app)
 
 class User(db.Model):
